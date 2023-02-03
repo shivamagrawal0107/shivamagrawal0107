@@ -1,0 +1,36 @@
+{
+  "name": "shoppich_club",
+  "version": "1.0.0",
+  "description": "Rest API of SHOPPICH Guide Managemant",
+  "main": "local.js",
+  "scripts": {
+    "start": "nodemon --exec \"sls offline --httpPort 3001\"",
+    "deploy": "sls deploy",
+    "deployMicroFromRoot": "npm install && serverless deploy"
+  },
+  "author": "Shivam Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.931.0",
+    "aws-serverless-express": "^3.4.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^11.5.0",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "serverless-offline": "^9.2.6",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0",
+    "twilio": "^3.80.1"
+  },
+  "devDependencies": {
+    "serverless": "^3.22.0"
+  }
+}
